@@ -1,0 +1,140 @@
+[2017-10-04T08:31:31,375][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.queue", :path=>"/logstash/data/queue"}
+[2017-10-04T08:31:31,397][DEBUG][logstash.runner          ] -------- Logstash Settings (* means modified) ---------
+[2017-10-04T08:31:31,397][DEBUG][logstash.runner          ] node.name: "0c98011a8bd5"
+[2017-10-04T08:31:31,397][DEBUG][logstash.runner          ] *path.config: "test.conf"
+[2017-10-04T08:31:31,397][DEBUG][logstash.runner          ] path.data: "/logstash/data"
+[2017-10-04T08:31:31,398][DEBUG][logstash.runner          ] config.test_and_exit: false
+[2017-10-04T08:31:31,398][DEBUG][logstash.runner          ] config.reload.automatic: false
+[2017-10-04T08:31:31,398][DEBUG][logstash.runner          ] config.reload.interval: 3
+[2017-10-04T08:31:31,398][DEBUG][logstash.runner          ] metric.collect: true
+[2017-10-04T08:31:31,398][DEBUG][logstash.runner          ] pipeline.id: "main"
+[2017-10-04T08:31:31,399][DEBUG][logstash.runner          ] pipeline.system: false
+[2017-10-04T08:31:31,399][DEBUG][logstash.runner          ] pipeline.workers: 4
+[2017-10-04T08:31:31,399][DEBUG][logstash.runner          ] pipeline.output.workers: 1
+[2017-10-04T08:31:31,399][DEBUG][logstash.runner          ] pipeline.batch.size: 125
+[2017-10-04T08:31:31,399][DEBUG][logstash.runner          ] pipeline.batch.delay: 5
+[2017-10-04T08:31:31,400][DEBUG][logstash.runner          ] pipeline.unsafe_shutdown: false
+[2017-10-04T08:31:31,401][DEBUG][logstash.runner          ] path.plugins: []
+[2017-10-04T08:31:31,401][DEBUG][logstash.runner          ] config.debug: false
+[2017-10-04T08:31:31,401][DEBUG][logstash.runner          ] *log.level: "debug" (default: "info")
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] version: false
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] help: false
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] log.format: "plain"
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] http.host: "127.0.0.1"
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] http.port: 9600..9700
+[2017-10-04T08:31:31,402][DEBUG][logstash.runner          ] http.environment: "production"
+[2017-10-04T08:31:31,403][DEBUG][logstash.runner          ] queue.type: "memory"
+[2017-10-04T08:31:31,403][DEBUG][logstash.runner          ] queue.drain: false
+[2017-10-04T08:31:31,403][DEBUG][logstash.runner          ] queue.page_capacity: 262144000
+[2017-10-04T08:31:31,403][DEBUG][logstash.runner          ] queue.max_bytes: 1073741824
+[2017-10-04T08:31:31,404][DEBUG][logstash.runner          ] queue.max_events: 0
+[2017-10-04T08:31:31,404][DEBUG][logstash.runner          ] queue.checkpoint.acks: 1024
+[2017-10-04T08:31:31,404][DEBUG][logstash.runner          ] queue.checkpoint.writes: 1024
+[2017-10-04T08:31:31,404][DEBUG][logstash.runner          ] queue.checkpoint.interval: 1000
+[2017-10-04T08:31:31,405][DEBUG][logstash.runner          ] slowlog.threshold.warn: -1
+[2017-10-04T08:31:31,405][DEBUG][logstash.runner          ] slowlog.threshold.info: -1
+[2017-10-04T08:31:31,405][DEBUG][logstash.runner          ] slowlog.threshold.debug: -1
+[2017-10-04T08:31:31,405][DEBUG][logstash.runner          ] slowlog.threshold.trace: -1
+[2017-10-04T08:31:31,405][DEBUG][logstash.runner          ] path.queue: "/logstash/data/queue"
+[2017-10-04T08:31:31,406][DEBUG][logstash.runner          ] path.settings: "/logstash/config"
+[2017-10-04T08:31:31,406][DEBUG][logstash.runner          ] path.logs: "/logstash/logs"
+[2017-10-04T08:31:31,406][DEBUG][logstash.runner          ] --------------- Logstash Settings -------------------
+[2017-10-04T08:31:31,412][INFO ][logstash.agent           ] No persistent UUID file found. Generating new UUID {:uuid=>"25d2bd0a-8cc9-4d14-a5ff-21394868c3e9", :path=>"/logstash/data/uuid"}
+[2017-10-04T08:31:31,426][DEBUG][logstash.agent           ] Agent: Configuring metric collection
+[2017-10-04T08:31:31,428][DEBUG][logstash.instrument.periodicpoller.os] PeriodicPoller: Starting {:polling_interval=>5, :polling_timeout=>120}
+[2017-10-04T08:31:31,457][DEBUG][logstash.instrument.periodicpoller.jvm] PeriodicPoller: Starting {:polling_interval=>5, :polling_timeout=>120}
+[2017-10-04T08:31:31,494][DEBUG][logstash.instrument.periodicpoller.persistentqueue] PeriodicPoller: Starting {:polling_interval=>5, :polling_timeout=>120}
+[2017-10-04T08:31:31,502][DEBUG][logstash.agent           ] Reading config file {:config_file=>"/logstash/test.conf"}
+[2017-10-04T08:31:31,569][DEBUG][logstash.plugins.registry] On demand adding plugin to the registry {:name=>"kafka", :type=>"input", :class=>LogStash::Inputs::Kafka}
+[2017-10-04T08:31:31,586][DEBUG][logstash.plugins.registry] On demand adding plugin to the registry {:name=>"json", :type=>"codec", :class=>LogStash::Codecs::JSON}
+[2017-10-04T08:31:31,629][DEBUG][logstash.codecs.json     ] config LogStash::Codecs::JSON/@id = "json_efc4605b-a6d3-4172-8eca-9776a054e4af"
+[2017-10-04T08:31:31,631][DEBUG][logstash.codecs.json     ] config LogStash::Codecs::JSON/@enable_metric = true
+[2017-10-04T08:31:31,631][DEBUG][logstash.codecs.json     ] config LogStash::Codecs::JSON/@charset = "UTF-8"
+[2017-10-04T08:31:31,636][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@codec = <LogStash::Codecs::JSON id=>"json_efc4605b-a6d3-4172-8eca-9776a054e4af", enable_metric=>true, charset=>"UTF-8">
+[2017-10-04T08:31:31,636][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@bootstrap_servers = "10.0.20.50:4000,10.0.20.50:4001,10.0.20.4:4000,10.0.20.4:4001,10.0.20.62:4000,10.0.20.62:4001"
+[2017-10-04T08:31:31,636][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@group_id = "logstash"
+[2017-10-04T08:31:31,637][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@topics = ["logstash_logs"]
+[2017-10-04T08:31:31,637][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@consumer_threads = 1
+[2017-10-04T08:31:31,637][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@id = "58f8b2c9d6c575a2ed99e8256dc4a43fd1885aa0-1"
+[2017-10-04T08:31:31,637][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@enable_metric = true
+[2017-10-04T08:31:31,637][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@add_field = {}
+[2017-10-04T08:31:31,638][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@auto_commit_interval_ms = "10"
+[2017-10-04T08:31:31,638][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@client_id = "logstash"
+[2017-10-04T08:31:31,638][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@enable_auto_commit = "true"
+[2017-10-04T08:31:31,639][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@key_deserializer_class = "org.apache.kafka.common.serialization.StringDeserializer"
+[2017-10-04T08:31:31,639][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@session_timeout_ms = "30000"
+[2017-10-04T08:31:31,639][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@value_deserializer_class = "org.apache.kafka.common.serialization.StringDeserializer"
+[2017-10-04T08:31:31,639][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@poll_timeout_ms = 100
+[2017-10-04T08:31:31,640][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@ssl = false
+[2017-10-04T08:31:31,640][DEBUG][logstash.inputs.kafka    ] config LogStash::Inputs::Kafka/@decorate_events = false
+[2017-10-04T08:31:31,646][DEBUG][logstash.plugins.registry] On demand adding plugin to the registry {:name=>"rubydebug", :type=>"codec", :class=>LogStash::Codecs::RubyDebug}
+[2017-10-04T08:31:31,649][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@metadata = true
+[2017-10-04T08:31:31,650][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@id = "58f8b2c9d6c575a2ed99e8256dc4a43fd1885aa0-2"
+[2017-10-04T08:31:31,650][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@enable_metric = true
+[2017-10-04T08:31:31,706][DEBUG][logstash.plugins.registry] On demand adding plugin to the registry {:name=>"stdout", :type=>"output", :class=>LogStash::Outputs::Stdout}
+[2017-10-04T08:31:31,711][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@metadata = true
+[2017-10-04T08:31:31,712][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@id = "58f8b2c9d6c575a2ed99e8256dc4a43fd1885aa0-2"
+[2017-10-04T08:31:31,712][DEBUG][logstash.codecs.rubydebug] config LogStash::Codecs::RubyDebug/@enable_metric = true
+[2017-10-04T08:31:31,714][DEBUG][logstash.outputs.stdout  ] config LogStash::Outputs::Stdout/@codec = <LogStash::Codecs::RubyDebug metadata=>true, id=>"58f8b2c9d6c575a2ed99e8256dc4a43fd1885aa0-2", enable_metric=>true>
+[2017-10-04T08:31:31,715][DEBUG][logstash.outputs.stdout  ] config LogStash::Outputs::Stdout/@id = "58f8b2c9d6c575a2ed99e8256dc4a43fd1885aa0-3"
+[2017-10-04T08:31:31,715][DEBUG][logstash.outputs.stdout  ] config LogStash::Outputs::Stdout/@enable_metric = true
+[2017-10-04T08:31:31,716][DEBUG][logstash.outputs.stdout  ] config LogStash::Outputs::Stdout/@workers = 1
+[2017-10-04T08:31:31,730][DEBUG][logstash.agent           ] starting agent
+[2017-10-04T08:31:31,733][DEBUG][logstash.agent           ] starting pipeline {:id=>"main"}
+[2017-10-04T08:31:31,750][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>4, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>500}
+[2017-10-04T08:31:31,762][INFO ][logstash.pipeline        ] Pipeline main started
+[2017-10-04T08:31:31,782][DEBUG][logstash.agent           ] Starting puma
+[2017-10-04T08:31:31,790][DEBUG][logstash.agent           ] Trying to start WebServer {:port=>9600}
+[2017-10-04T08:31:31,796][DEBUG][logstash.api.service     ] [api-service] start
+[2017-10-04T08:31:31,878][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2017-10-04T08:31:36,763][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:31:41,763][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:31:46,764][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:31:51,764][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:31:56,764][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:01,764][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:06,766][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:11,765][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:16,765][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:21,766][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:26,766][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:31,767][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:36,768][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:41,768][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:46,767][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:51,767][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:32:56,768][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:01,769][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:06,769][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:11,769][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:16,770][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:21,769][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:26,770][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:31,771][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:36,771][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:41,771][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:46,771][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:51,772][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:33:56,773][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:01,774][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:06,773][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:11,773][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:16,775][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:21,775][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:26,776][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:31,776][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:36,776][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:41,777][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:46,777][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:51,777][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:34:56,778][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:01,781][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:06,782][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:11,782][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:16,782][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:21,783][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:26,783][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:31,783][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:36,783][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:41,783][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
+[2017-10-04T08:35:46,782][DEBUG][logstash.pipeline        ] Pushing flush onto pipeline
